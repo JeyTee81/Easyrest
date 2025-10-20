@@ -1,0 +1,55 @@
+name: easyrest_tablette
+description: Application de gestion de restaurant/bar pour tablette (EasyRest)
+publish_to: 'none'
+version: 2.0.0+2
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  provider: ^6.0.5
+  http: ^1.1.0
+  path_provider: ^2.1.2
+  url_launcher: ^6.2.6
+  shared_preferences: ^2.2.2
+  network_info_plus: ^4.1.0
+  qr_flutter: ^4.1.0
+  pdf: ^3.11.3
+  share_plus: ^11.0.0
+  file_picker: ^8.0.0
+  postgres: ^3.0.2
+  # window_manager: ^0.3.8 # Temporairement commenté
+
+  path: any
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+  flutter_lints: ^3.0.0
+
+  path: any
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo.png
+
+# flutter_launcher_icons configuration
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.png"
+  min_sdk_android: 21
+  web:
+    generate: true
+    image_path: "assets/logo.png"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "assets/logo.png"
+    icon_size: 48
